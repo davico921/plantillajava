@@ -1,0 +1,12 @@
+app\tls\model\response\UserResponse.class
+app\tls\model\User.class
+app\tls\TlsApplication.class
+app\tls\services\Imple\UserServicesImple.class
+app\tls\dto\CustomResponseDto.class
+app\tls\controller\UserController.class
+app\tls\dto\DocumentoResponse.class
+app\tls\model\request\UserRequest.class
+app\tls\model\Documento.class
+app\tls\services\UserServices.class
+app\tls\dto\UpdatePeriodRequestDto.class
+app\tls\repository\UserRepository.class

@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: '/tls'
+  port: 8086
+
+
