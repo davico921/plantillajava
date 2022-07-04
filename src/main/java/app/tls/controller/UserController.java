@@ -1,73 +1,53 @@
 package app.tls.controller;
 
 
-
+import app.tls.dto.UserDto;
+import app.tls.dto.UserRequestDto;
+import app.tls.services.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import app.tls.model.User;
-import app.tls.model.request.UserRequest;
-import app.tls.model.response.UserResponse;
-import app.tls.services.UserServices;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 
-
 @RestController
 @RequestMapping("user")
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class UserController {
+    private final UserService userService;
 
-	@Autowired
-	UserServices service;
-	
-	
 
-	@GetMapping("/listar")
-    public ResponseEntity<List<UserResponse>> listar(){
-		List<UserResponse> obj = service.listar();
-		return new ResponseEntity<List<UserResponse>>(obj,HttpStatus.OK);	
-		
-	}	
-
-	
-	
-	@GetMapping("/api/{id}")
-	@ResponseBody
-    public UserResponse BuscarPorId(@PathVariable  String id ) {
-		System.out.println("buena"+id);
-        return service.getContenido(id);
+    @GetMapping("/listar")
+    public ResponseEntity<List<UserDto>> getAllUsers() {
+        List<UserDto> obj = userService.getAllUsers();
+        return new ResponseEntity<>(obj, HttpStatus.OK);
     }
-	
-	@GetMapping("/api2/{id}/{sex}")
-	@ResponseBody
-    public UserResponse BuscarPorId2(@PathVariable  String id , @PathVariable String sex ) {
-		System.out.println("buena"+id+sex);
-        return service.getContenido2(id,sex);
+
+
+    @GetMapping("/api/{id}")
+    @ResponseBody
+    public UserDto getById(@PathVariable String id) {
+        return userService.getContent(id);
     }
-	
-	
-	@PostMapping("/")
-	public List<UserResponse>Userpost(@RequestBody UserRequest body){
-		return service.getContenido3(body);
-	}
 
-	@PostMapping("/Documento")
-	public List<UserResponse>Userpost2(@RequestBody UserRequest body){
-		return service.getContenido4(body);
+    @GetMapping("/api2/{id}/{sex}")
+    @ResponseBody
+    public UserDto getById2(@PathVariable String id, @PathVariable String sex) {
+        return userService.getContent2(id, sex);
+    }
 
+    @PostMapping("/")
+    public UserDto userPost(@RequestBody UserRequestDto body) {
+        return userService.getContent3(body);
+    }
 
-	}
-
+    @PostMapping("/Documento")
+    public UserDto userPost2(@RequestBody UserRequestDto body) {
+        return userService.getContent4(body);
+    }
 }
 
 

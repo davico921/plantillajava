@@ -5,22 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88327b91-2a03-48ff-93c6-749eb08965c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/tls/dto/DocumentoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/tls/model/Documento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/tls/dto/DocumentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/tls/model/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/TlsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/TlsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/model/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/model/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/dto/CustomResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/dto/DocumentoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/dto/UpdatePeriodRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/model/Documento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/model/request/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/dto/UserRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/model/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/services/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/tls/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/tls/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,6 +74,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2BJOPs9Tc5JRRiGxKKwA3HHbtqu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +86,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/rreynaga/Desktop/Repositorio/JavaKelvin"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/diego/Desktop/iEduca/plantillajava",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "0964eb56a63aa727a2e4d7f6897b57e5"
   }
 }]]></component>
   <component name="RunManager">
@@ -102,8 +130,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656620711168</updated>
+      <workItem from="1656953780535" duration="39000" />
+      <workItem from="1656953827794" duration="3620000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -115,55 +148,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/controller/UserController.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/repository/UserRepository.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/services/Imple/UserServicesImple.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/tls/repository/UserRepository.java</url>
-          <line>80</line>
-          <properties class="app.tls.repository.UserRepository" method="getContenido4">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
